@@ -1,2 +1,1 @@
 # sass-portfolio
-responsive portfolio
