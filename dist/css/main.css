@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background-image: url("../img/portrait-img.jpg");
+      background-image: url("../../docs/img/portrait-img.jpg");
       background-size: contain;
       background-size: cover;
       border-radius: 50%;
@@ -103,7 +103,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../img/home-img.jpg");
+    background: url("../../docs/img/home-img.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -162,8 +162,8 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: 'bioimage bio bio' 'job1 job1 job1';
+  grid-template-columns: repeat(1, 1fr); }
   .about-info .bio-image {
     width: 250px;
     height: 250px;
@@ -277,7 +277,7 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job1' 'job1';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
