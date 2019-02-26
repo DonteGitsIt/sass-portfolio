@@ -84,7 +84,7 @@ main{
     grid-template-areas:
         'bioimage bio bio'
         'job1 job1 job1';
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
     .bio-image{
         width: 250px;
@@ -98,11 +98,21 @@ main{
     .bio{
         grid-area: bio;
         font-size: 1.5rem;
+        a{
+            color: $secondary-color;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
     }
     
     .job-1{
         grid-area: job1;
         
+        svg{
+            width: 10rem;
+            height:10rem;
+        }
         
     }
     
@@ -120,6 +130,10 @@ main{
         padding: 0.5rem;
         
         border-bottom: $secondary-color 5px solid;
+
+        h2{
+            text-align: center;
+        }
     }
 }
 

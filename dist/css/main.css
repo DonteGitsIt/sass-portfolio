@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background-image: url("../../docs/img/portrait-img.jpg");
+      background-image: url("img/portrait-img.jpg");
       background-size: contain;
       background-size: cover;
       border-radius: 50%;
@@ -103,7 +103,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url("../../docs/img/home-img.jpg");
+    background: url("img/home-img.jpg");
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
@@ -163,7 +163,7 @@ main {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio bio' 'job1 job1 job1';
-  grid-template-columns: repeat(1, 1fr); }
+  grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
     width: 250px;
     height: 250px;
@@ -174,8 +174,15 @@ main {
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
+    .about-info .bio a {
+      color: #90dfd4; }
+    .about-info .bio a:hover {
+      text-decoration: underline; }
   .about-info .job-1 {
     grid-area: job1; }
+    .about-info .job-1 svg {
+      width: 10rem;
+      height: 10rem; }
   .about-info .job-2 {
     grid-area: job2; }
   .about-info .job-3 {
@@ -184,6 +191,8 @@ main {
     background: #5f5e5d;
     padding: 0.5rem;
     border-bottom: #90dfd4 5px solid; }
+    .about-info .job h2 {
+      text-align: center; }
 
 .projects {
   display: grid;
